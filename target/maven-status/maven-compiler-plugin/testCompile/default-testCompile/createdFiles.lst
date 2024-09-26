@@ -1,0 +1,17 @@
+com\fidelis\pages\ShopForAPlanPage.class
+com\fidelis\steps\Hooks.class
+com\fidelis\steps\StepDefinition.class
+com\fidelis\tests\LoginPageTest.class
+com\fidelis\pages\HomePage.class
+com\fidelis\runners\RegressionTest.class
+com\fidelis\tests\MemberOnlinePortalPageTest.class
+com\fidelis\tests\MemberPageTest.class
+com\fidelis\pages\MemberOnlinePortalPage.class
+com\fidelis\pages\LoginPage.class
+com\fidelis\tests\HomePageTest.class
+com\fidelis\pages\MemberPortalHome.class
+com\fidelis\pages\ProvidersPage.class
+com\fidelis\tests\ShopForAPlanPageTest.class
+com\fidelis\pages\MemberPage.class
+com\fidelis\runners\SmokeTest.class
+com\fidelis\tests\ProviderPageTest.class

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-17T17:53:31 EDT" name="Suite" finished-at="2024-09-17T18:00:27 EDT" duration-ms="416014">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-09-17T17:53:31 EDT" name="Test" finished-at="2024-09-17T18:00:27 EDT" duration-ms="416014">
+      <class name="com.fidelis.runners.RegressionTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T17:53:31 EDT" name="beforeSuite" finished-at="2024-09-17T17:53:31 EDT" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T17:53:31 EDT" name="setUpClass" finished-at="2024-09-17T17:53:31 EDT" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T17:53:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-17T17:53:55 EDT" duration-ms="23938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify FidelisCare home page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["FidelisCare Home Page feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T17:53:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-17T17:54:35 EDT" duration-ms="39342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify FidelisCare login is working or not"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["FidelisCare login validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T17:54:35 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-17T17:55:15 EDT" duration-ms="40737" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify FidelisCare login is working or not"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["FidelisCare login validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T17:55:15 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-17T17:55:52 EDT" duration-ms="36826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify FidelisCare login is working or not"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["FidelisCare login validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T17:55:52 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-17T17:57:04 EDT" duration-ms="71286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify FidelisCare  member page login credential"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["FidelisCare Member Page feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T17:57:04 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-17T17:57:46 EDT" duration-ms="42859" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify  login page is working or not"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["FidelisCare member portal page testing info"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T17:57:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-17T17:58:29 EDT" duration-ms="42407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify  login page is working or not"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["FidelisCare member portal page testing info"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T17:58:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-17T17:59:04 EDT" duration-ms="34799" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify FidelisCare Providers Page Login Credential"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["FidelisCare Providers Page feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T17:59:04 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-17T18:00:25 EDT" duration-ms="81783" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify FidelisCare Shop For A Plan page details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["FidelisCare Shop For A Plan Page feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Dual Advantage')]"}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20ab9c9343fdfead24afa599dd880c00, findElement {using=xpath, value=//div[contains(text(),'Dual Advantage')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\mdrhm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63854}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63854/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20ab9c9343fdfead24afa599dd880c00]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Dual Advantage')]"}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20ab9c9343fdfead24afa599dd880c00, findElement {using=xpath, value=//div[contains(text(),'Dual Advantage')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\mdrhm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63854}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63854/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20ab9c9343fdfead24afa599dd880c00
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+at com.fidelis.pages.ShopForAPlanPage.clickOnDualAdvantage(ShopForAPlanPage.java:54)
+at com.fidelis.steps.StepDefinition.click_on_dual_advantage(StepDefinition.java:343)
+at ✽.click on dual advantage(file:///C:/Users/mdrhm/OneDrive/Desktop/OSA0820202325A/BDD_Cucumber_FidelisCare_Project/src/test/java/com/fidelis/features/ShopForAPlanPage.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T18:00:25 EDT" name="tearDownClass" finished-at="2024-09-17T18:00:27 EDT" duration-ms="1674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.fidelis.runners.RegressionTest@6b927fb]" started-at="2024-09-17T18:00:27 EDT" name="afterSuite" finished-at="2024-09-17T18:00:27 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.fidelis.runners.RegressionTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

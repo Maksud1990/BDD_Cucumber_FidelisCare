@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>No Name (add projectName to cucumber-reporting.properties)</td>
+      <td>17 Sep 2024, 19:58</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.fidelis.steps.Hooks.runAfterScenario()</td>
+              <td>9</td>
+              <td class="duration" data-value="216622">0.000</td>
+              <td class="duration" data-value="216622">0.001</td>
+              <td class="duration" data-value="1949600">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.Hooks.runAfterTagScenario()</td>
+              <td>4</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.Hooks.runBeforeScenario()</td>
+              <td>9</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.Hooks.runBeforeTagScenario()</td>
+              <td>4</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.click_on_EnterKeyID_button()</td>
+              <td>6</td>
+              <td class="duration" data-value="5907993133">5.907</td>
+              <td class="duration" data-value="5907993133">8.219</td>
+              <td class="duration" data-value="35447958800">35.447</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.click_on_child_health_plus()</td>
+              <td>1</td>
+              <td class="duration" data-value="2368401700">2.368</td>
+              <td class="duration" data-value="2368401700">2.368</td>
+              <td class="duration" data-value="2368401700">2.368</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.click_on_continue_button()</td>
+              <td>6</td>
+              <td class="duration" data-value="147089600">0.147</td>
+              <td class="duration" data-value="147089600">0.209</td>
+              <td class="duration" data-value="882537600">0.882</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.click_on_dual_advantage()</td>
+              <td>1</td>
+              <td class="duration" data-value="32055257200">32.055</td>
+              <td class="duration" data-value="32055257200">32.055</td>
+              <td class="duration" data-value="32055257200">32.055</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.click_on_essential_plan()</td>
+              <td>1</td>
+              <td class="duration" data-value="2224911300">2.224</td>
+              <td class="duration" data-value="2224911300">2.224</td>
+              <td class="duration" data-value="2224911300">2.224</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.click_on_fidelis_care_at_home()</td>
+              <td>1</td>
+              <td class="duration" data-value="2256178400">2.256</td>
+              <td class="duration" data-value="2256178400">2.256</td>
+              <td class="duration" data-value="2256178400">2.256</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.click_on_healtheire_life()</td>
+              <td>1</td>
+              <td class="duration" data-value="2208641400">2.208</td>
+              <td class="duration" data-value="2208641400">2.208</td>
+              <td class="duration" data-value="2208641400">2.208</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.click_on_login_btn2()</td>
+              <td>1</td>
+              <td class="duration" data-value="2824652800">2.824</td>
+              <td class="duration" data-value="2824652800">2.824</td>
+              <td class="duration" data-value="2824652800">2.824</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.click_on_medicaid_managed_care()</td>
+              <td>1</td>
+              <td class="duration" data-value="8860557300">8.860</td>
+              <td class="duration" data-value="8860557300">8.860</td>
+              <td class="duration" data-value="8860557300">8.860</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.click_on_medicare_advantage()</td>
+              <td>1</td>
+              <td class="duration" data-value="2297800400">2.297</td>
+              <td class="duration" data-value="2297800400">2.297</td>
+              <td class="duration" data-value="2297800400">2.297</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.click_on_member_access_online()</td>
+              <td>5</td>
+              <td class="duration" data-value="309499400">0.309</td>
+              <td class="duration" data-value="309499400">0.491</td>
+              <td class="duration" data-value="1547497000">1.547</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.click_on_quality_health_plan()</td>
+              <td>1</td>
+              <td class="duration" data-value="2191324300">2.191</td>
+              <td class="duration" data-value="2191324300">2.191</td>
+              <td class="duration" data-value="2191324300">2.191</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_am_on_FidelisCare_home_page()</td>
+              <td>9</td>
+              <td class="duration" data-value="3949714011">3.949</td>
+              <td class="duration" data-value="3949714011">5.830</td>
+              <td class="duration" data-value="35547426100">35.547</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_click_On_Login_button1()</td>
+              <td>1</td>
+              <td class="duration" data-value="3248764300">3.248</td>
+              <td class="duration" data-value="3248764300">3.248</td>
+              <td class="duration" data-value="3248764300">3.248</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_click_on_HRA_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="3114030400">3.114</td>
+              <td class="duration" data-value="3114030400">3.114</td>
+              <td class="duration" data-value="3114030400">3.114</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_click_on_PCB_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="3174086300">3.174</td>
+              <td class="duration" data-value="3174086300">3.174</td>
+              <td class="duration" data-value="3174086300">3.174</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_click_on_Providers_and_providers_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="6679764900">6.679</td>
+              <td class="duration" data-value="6679764900">6.679</td>
+              <td class="duration" data-value="6679764900">6.679</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_click_on_RYPD_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="3200834500">3.200</td>
+              <td class="duration" data-value="3200834500">3.200</td>
+              <td class="duration" data-value="3200834500">3.200</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_click_on_SUOMP_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="3098348600">3.098</td>
+              <td class="duration" data-value="3098348600">3.098</td>
+              <td class="duration" data-value="3098348600">3.098</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_click_on_login_button()</td>
+              <td>6</td>
+              <td class="duration" data-value="4144255116">4.144</td>
+              <td class="duration" data-value="4144255116">4.155</td>
+              <td class="duration" data-value="24865530700">24.865</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_click_on_member_and_members_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="3168231300">3.168</td>
+              <td class="duration" data-value="3168231300">3.168</td>
+              <td class="duration" data-value="3168231300">3.168</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_click_on_member_login_button()</td>
+              <td>5</td>
+              <td class="duration" data-value="256632040">0.256</td>
+              <td class="duration" data-value="256632040">0.419</td>
+              <td class="duration" data-value="1283160200">1.283</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_click_on_shop_for_a_plan_button_and_again_plan_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="15222415900">15.222</td>
+              <td class="duration" data-value="15222415900">15.222</td>
+              <td class="duration" data-value="15222415900">15.222</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_close_the_browser()</td>
+              <td>9</td>
+              <td class="duration" data-value="3151582488">3.151</td>
+              <td class="duration" data-value="3151582488">3.840</td>
+              <td class="duration" data-value="28364242400">28.364</td>
+              <td class="failed">88.89%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_enter_password_as(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="1865638066">1.865</td>
+              <td class="duration" data-value="1865638066">2.849</td>
+              <td class="duration" data-value="5596914200">5.596</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_enter_username_as(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="214273433">0.214</td>
+              <td class="duration" data-value="214273433">0.278</td>
+              <td class="duration" data-value="642820300">0.642</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_have_to_open_chrome_browser()</td>
+              <td>9</td>
+              <td class="duration" data-value="14928805866">14.928</td>
+              <td class="duration" data-value="14928805866">16.376</td>
+              <td class="duration" data-value="134359252800">2:14.359</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_should_be_able_to_see_the_member_portal_home_page()</td>
+              <td>3</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_verify_the_member_page_title()</td>
+              <td>3</td>
+              <td class="duration" data-value="37300766">0.037</td>
+              <td class="duration" data-value="37300766">0.066</td>
+              <td class="duration" data-value="111902300">0.111</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.i_verify_the_title()</td>
+              <td>1</td>
+              <td class="duration" data-value="21644900">0.021</td>
+              <td class="duration" data-value="21644900">0.021</td>
+              <td class="duration" data-value="21644900">0.021</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.next_I_have_to_type_password_as(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="2095094700">2.095</td>
+              <td class="duration" data-value="2095094700">3.601</td>
+              <td class="duration" data-value="8380378800">8.380</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.now_I_have_to_type_username_as(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="525093125">0.525</td>
+              <td class="duration" data-value="525093125">1.324</td>
+              <td class="duration" data-value="2100372500">2.100</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.fidelis.steps.StepDefinition.type_on_email_address()</td>
+              <td>6</td>
+              <td class="duration" data-value="4270204500">4.270</td>
+              <td class="duration" data-value="4270204500">4.317</td>
+              <td class="duration" data-value="25621227000">25.621</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>37</td>
+            <td>125</td>
+            <td class="duration">3.223</td>
+            <td class="duration">2:14.359</td>
+            <td class="duration">6:42.969</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
